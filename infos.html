@@ -4,40 +4,450 @@
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/gist-embed/1.7/gist-embed.min.js"></script>
 </head>
 <body>
-<h4>Configurações:</h4>
-- Sem pré miners<br>
-- 50 milhões e quatrocentos mil unidades totais (50400000)<br>
-- 120 DILMAS por bloco! Blocos a cada 8 minutos<br>
-- Porta P2P 11056 : Porta RPC 21056<br>
-- Dificuldade reajustada a cada 150 minutos<br>
-<br><br>
-1 Dilminha = 0.00000001 DILMA ou HUE
-<br><br>
-<h4>Como Minerar</h4>
+<a href="#h.9rlqf77qc0u1">Objetivos da moeda</a>
+<br>
+<a href="#h.aalq2dbwcekc">E como funciona uma criptomoeda?</a>
+<br>
+<a href="#h.2irnqvluj65o">Como criar a sua carteira ?</a>
+<br>
+<a href="#h.94fyvdr2meu0">Proteja a sua carteira</a>
+<br>
+<a href="#h.vyxuwzrrmg27">Como ganhar DilmaCoins ou outras criptomoedas?</a>
+<br>
+<a href="#h.ukdafeiyh126">Como minerar a Dilmacoin?</a>
+<br>
+<a href="#h.14g2i2y09om8">Mineração em conjunto ou Mining pool</a>
+<br>
+<a href="#h.asd0p0mrjqmq">1º programa: cpuminer</a>
+<br>
+<a href="#h.bs0uz0xawl5u">Download para Windows</a>
+<br>
+<a href="#h.4xumkqrv7mv">Código fonte</a>
+<br>
+<a href="#h.o7r6h3scjr8n">2º programa: sgminer</a>
+<br>
+<a href="#h.bzr4y9no11ue">Download para Windows</a>
+<br>
+<a href="#h.1wpp0eyktfo5">Código fonte</a>
+<br>
+<a href="#h.msl37z23kh8m">Configurando o minerador para o &ldquo;pool do girino&rdquo;</a>
+<br>
+<a href="#h.dt4fpt7s3uap">Configurando o minerador para a p2poolbrasil</a>
+<br>
+<a href="#h.y8a18pqjnl8f">Diferenças entre o Bitcoin e a DilmaCoin</a>
+<br>
+<a href="#h.xsu4bls5i7in">Informações técnicas sobre a DilmaCoin</a>
+<p> </p>
+<p> </p>
+<h1><a name="h.9rlqf77qc0u1"></a>Objetivos da moeda</h1>
+<p>Educar o público Brasileiro sobre o uso  de moedas criptografadas</p>
+<p>Educar desenvolvedores de softwares Brasileiros sobre desenvolvimento de aplicações com  moedas criptografadas</p>
+<p> </p>
+<p>O que é a Dilmacoin?</p>
+<p>É uma criptomoeda que funciona exatamente igual ao Bitcoin. A razão pela qual ela foi criada é porque o Bitcoin é muito caro, o que afasta as pessoas de terem um bitcoin.  A DilmaCoin foi criada para ser uma moeda educacional, onde todos os brasileiros possam ter uma DilmaCoin, e entender o como as criptomoedas funcionam.</p>
+<p> </p>
+<p>Quem criou a Dilmacoin ?</p>
+<p>A resposta é ninguém. Ela não possui criador, pois ela é somente uma cópia do Bitcoin com o nome e <a href="#h.y8a18pqjnl8f">algumas outras pequenas coisas alteradas</a>. Coisa que qualquer programador poderia fazer em apenas 4 horas de trabalho. Portanto o criador da Dilmacoin é o mesmo criador do Bitcoin, ou seja, Satoshi Nakamoto, que é nada mais do que um codinome para alguém que deseja se manter anônimo.</p>
+<p> </p>
+<p>Além de que, uma criptomoeda não é apenas um código fonte, mas sim todo o esforço das pessoas que a usam e confiam, então seria correto dizer que todo mundo que possui uma única dilmacoin é tão responsável por ela quanto a pessoa que alterou o código fonte do bitcoin, quanto a pessoa que deu o nome, quanto todo mundo.</p>
+<p> </p>
+<p>As únicas coisas que se sabem, é que Rodrigo Souza deu uma ideia de usar o nome DilmaCoin como forma de atrair atenção do público que desconhece as moedas criptografadas no Brasil em um grupo de discussão de criptomoedas alternativas ao bitcoin, e que então, 9 horas depois desta discussão, alguém com o codinome &ldquo;dilmacoin&rdquo; fez o anuncio da moeda dilmacoin no fórum bitcointalk.  Não houve interesse algum da comunidade até que uma semana depois, foi criado um grupo no facebook para a DilmaCoin, e várias pessoas começaram a minerar ela.  Não existe correlação nenhuma entre o Rodrigo Souza e este programador que deseja manter o anonimato, e este programador já avisou que foi tudo uma mera coincidência.</p>
+<p> </p>
+<h1><a name="h.aalq2dbwcekc"></a>E como funciona uma criptomoeda?</h1>
+<p>Uma analogia simples para explicar o como funciona é comparando as criptomoedas ao sistema bancário convencional</p>
+<p> </p>
+<p>No sistema bancário convencional, você possui um número de conta bancária que você informa as pessoas que desejam enviar dinheiro para você. Junto com esta conta bancária você possui uma senha, cujo a pessoa que tiver acesso a esta senha, poderá movimentar a conta bancária.  Todos os registros de movimentação entre as contas bancárias estão armazenados no seu banco, que por sua vez é regulado e administrado pelo banco central, que por sua vez tem a capacidade de criar dinheiro na economia ou regular a quantidade de dinheiro usando-se das taxas de juros.</p>
+<p> </p>
+<p>Já nas criptomoedas, você possui uma carteira (equivalente a conta bancária), onde esta carteira possui duas informações importantes, o endereço público dela (equivalente número da sua conta bancária) e a chave privada dela (equivalente a senha). Para você receber moedas, você informa o endereço público da sua carteira, e para você movimentar ela, você precisa ter a senha dela (que normalmente é armazenada dentro de um arquivo no seu computador pessoal). Todos os registros de movimentação entre as carteiras estão armazenados na internet em um banco de dados distribuído (tipo as músicas e filmes que estão no torrent). As criptomoedas não possuem um banco central, ao invés disso, elas possuem uma rede de computadores que estão constantemente resolvendo problemas matemtáticos difíceis para então terem o privilégio de registrar as transações financeiras entre as carteiras, processo também conhecido como mineração, e como recompensa por ter resolvido estes desafios matemáticos difíceis, estes mineradores podem emitir uma quantidade de criptomoedas no mercado, eliminando assim a necessidade de um banco central emissor da moeda.</p>
+<p> </p>
+<p>Veja a tabela comparativa abaixo:</p>
+<p> </p>
+<a href="https://docs.google.com/document/d/1VfmYd6A0daqceYwh-KjrdA_azomDMiJx62EClcQ0-xs/pub#" name="f74531205e05993a733c020dbf28cf4286931b7c"></a><a href="https://docs.google.com/document/d/1VfmYd6A0daqceYwh-KjrdA_azomDMiJx62EClcQ0-xs/pub#" name="0"></a>
+<table cellpadding="0" cellspacing="0">
+    <tbody>
+    <tr>
+        <td> </td>
+        <td>Sistema convencional</td>
+        <td>Sistema de Cripto moedas</td>
+    </tr>
+    <tr>
+        <td>Emissor da moeda</td>
+        <td>Somente o Banco Central.</td>
+        <td>Mineradores (basicamente qualquer pessoa com um computador com programa de mineração instalado).</td>
+    </tr>
+    <tr>
+        <td>Onde armazenar as moedas</td>
+        <td>Bancos (Itaú, Bradesco...).</td>
+        <td>Um programa instalado no seu computador chamado de &ldquo;DilmaCoin&rdquo;. No caso dos bitcoins, você precisa instalar o programa chamado &ldquo;Bitcoin&rdquo; para poder armazenar.</td>
+    </tr>
+    <tr>
+        <td>Abertura de contas</td>
+        <td>Precisa de documentos e burocracia com o seu banco.</td>
+        <td>Qualquer um com internet pode instalar o programa.</td>
+    </tr>
+    <tr>
+        <td>Fechamentos de contas</td>
+        <td>Esqueça... nem tente....</td>
+        <td>Apagar o programa do seu computador.</td>
+    </tr>
+    <tr>
+        <td>Acessar sua conta pelo navegador?</td>
+        <td>Sim, internet banking do seu banco.</td>
+        <td>Existem websites que permitem que você tenha uma carteira online.
+            No caso da DilmaCoin, você pode criar sua conta em:
+            <a href="http://www.google.com/url?q=http%3A%2F%2Fdilmacoin.info%2F&sa=D&sntz=1&usg=AFQjCNFHbWmKpMxExCwp9sCLpuisfjyBNA">http://dilmacoin.info/</a>
 
-Edite o arquivo conf.conf para suas configurações necessárias. (usuário e senha).
-<br>
-Também edite o arquivo minerador .bat (usuário e senha)
-<br>
-Rode o minerador.bat e você já está minerando!
-<br>
-<h4>Minerar com placa de vídeo - NVIDIA</h4>
+            No caso do Bitcoin você pode criar sua conta em:
+            <a href="http://www.google.com/url?q=http%3A%2F%2Fblockchain.info%2F&sa=D&sntz=1&usg=AFQjCNG7NL5eQ_3iKlTQfvfZQxCX3PWD3g">http://blockchain.info/</a> 
 
-Tutorial utilizando o CUDA Miner:
-<br><br>
-Basta fazer o download do CUDA Miner: <a href="http://cryptomining-blog.com/wp-content/files/cudaminer-2014-02-07.zip">Download</a><br>
-Será necessário criar um arquivo Minera.bat (pode ser qualquer nome).
-<br><br>
-Abra o bloco de notas e digite:
-<code data-gist-id="9885677"></code>
-<br>
-Se for minerar sozinho:
-<code data-gist-id="9885692"></code>
-<br>
-Sendo que user e senha podem ser qualquer coisa.
-<br><br>
-Dessa forma salve como *.bat e execute com ele dentro da pasta do cudaminer, ele começará a minerar, ai é só aguardar
-deixando o computador ligado.
+            A vantagem destes serviços é que você não precisa instalar nada em seu computador.</td>
+    </tr>
+    <tr>
+        <td>Receber dinheiro/moedas</td>
+        <td>Você precisa informar o seu banco,  sua agência, sua  conta bancária e seu CPF para a pessoa que irá lhe pagar.</td>
+        <td>Você precisa informar apenas o endereço público da sua carteira.</td>
+    </tr>
+    <tr>
+        <td>Para enviar dinheiro/moedas</td>
+        <td>Você precisa informar a senha do seu banco para o seu banco, ou usar um cartão de crédito para enviar dinheiro para comércios. O problema é colocar o seu número de cartão de crédito na internet de forma segura. :)</td>
+        <td>Tudo o que você precisa é o endereço público da pessoa que deseja receber e ter acesso a sua carteira.</td>
+    </tr>
+    <tr>
+        <td>Governo pode confiscar</td>
+        <td>Todo o dinheiro nos bancos são passíveis de confisco pelo Banco Central.</td>
+        <td>Não. Para movimentar a sua carteira, você obrigatóriamente precisa da sua chave privada que está segura dentro do seu computador.<br>
+            <br>
+            Na verdade, se você perder a sua chave privada, você não terá a quem recorrer, e todas as suas moedas serão perdidas.</td>
+    </tr>
+    <tr>
+        <td>Inflação</td>
+        <td>Controlada pelo governo. Eles pelo menos tentam controlar. :)</td>
+        <td>Não. A quantidade de moedas a serem criadas será pré definida nas definições da cripto-moeda. No caso da DilmaCoin, só existirão 50 milhões.
+            No caso do Bitcoin, só existirão 21 milhões.</td>
+    </tr>
+    <tr>
+        <td>Tarifas e custos</td>
+        <td>Cada banco cobra aquilo o que ele quer.</td>
+        <td>Existe uma tarifa pré-definida de 0,001 para cada transação feita.</td>
+    </tr>
+    <tr>
+        <td>Permite estorno do dinheiro</td>
+        <td>Sim.</td>
+        <td>Não, uma vez enviado o valor, é impossível ter o estorno dele.</td>
+    </tr>
+    <tr>
+        <td>Anônimo</td>
+        <td>Não para dinheiro em banco.<br>
+            Sim para dinheiro na cueca.
+
+            Não é atoa que todos os políticos corruptos, traficantes de drogas, e sonegadores de impostos preferem o uso do dinheiro vivo.</td>
+        <td>Todas as movimentações de todas as carteiras são públicas, para todo mundo ver.<br>
+            <br>
+            Para se manter anônimo, basta que você não informe o número da sua carteira para ninguém, e na hora de receber uma nova quantia, basta que você crie uma nova carteira.  <br>
+            <br>
+            Você pode ter quantas carteiras quiser. Não existe custo para ter uma carteira.</td>
+    </tr>
+    </tbody>
+</table>
+<p> </p>
+<h1><a name="h.2irnqvluj65o"></a>Como criar a sua carteira ?</h1>
+<p>Existem 2 maneiras de se criar a sua carteira:</p>
+<p> </p>
+<p>Opção 1º - Instalando o programa Dilmacoin em seu computador (Opção para usuários avançados)</p>
+<p><a href="https://www.google.com/url?q=https%3A%2F%2Fmega.co.nz%2F%23!NQ9ykYwR!aZe48qu0Pphc1TK3SjxHZT3vyP6tqCVUUDHwMOxU4mo&sa=D&sntz=1&usg=AFQjCNHGH3UfAGhFsk9aqoPI1vrH3t0sYA">https://mega.co.nz/#!NQ9ykYwR!aZe48qu0Pphc1TK3SjxHZT3vyP6tqCVUUDHwMOxU4mo</a> [Windows]</p>
+<p><a href="https://www.google.com/url?q=https%3A%2F%2Fmega.co.nz%2F%23!tJUAyRIA!UIKvtWlgf1xWhQ6OrnqYe-PqhoB760Vh1_ipKFT6CpM&sa=D&sntz=1&usg=AFQjCNFlT4FqqbyVJfnpGt3bzNBA81QBPA">https://mega.co.nz/#!tJUAyRIA!UIKvtWlgf1xWhQ6OrnqYe-PqhoB760Vh1_ipKFT6CpM</a> [Mac]</p>
+<p> </p>
+<p>- Ao iniciar, a carteira irá tentar entrar em sincronia com a rede, algo que deve dermorar +/- 1 minuto.   Se isso não acontecer, será necessário que você realize um ajuste no arquivo de configuração da carteira.</p>
+<p> </p>
+<p>No windows, este é o arquivo:  C:\Documents and Settings\[Username]\Application Data\Dilmacoin2\dilmacoin.conf</p>
+<p>Abra ele e coloque as seguintes informações</p>
+<a href="https://docs.google.com/document/d/1VfmYd6A0daqceYwh-KjrdA_azomDMiJx62EClcQ0-xs/pub#" name="ec4921996bd364510337a0b92b8b32f02d6ef18c"></a><a href="https://docs.google.com/document/d/1VfmYd6A0daqceYwh-KjrdA_azomDMiJx62EClcQ0-xs/pub#" name="1"></a>
+<table cellpadding="0" cellspacing="0">
+    <tbody>
+    <tr>
+        <td><p>addnode=24.90.156.217</p>
+            <p>addnode= 166.78.120.112</p>
+            <p>addnode=54.84.229.24</p></td>
+    </tr>
+    </tbody>
+</table>
+<p> </p>
+<p>Linux ou Mac:</p>
+<p>Fazer direto do código fonte: <a href="http://www.google.com/url?q=http%3A%2F%2Fgithub.com%2FDilmacoin%2Fdilmacoin&sa=D&sntz=1&usg=AFQjCNEDalrL8TFgLL3jrflhKEuRRguBrA">http://github.com/Dilmacoin/dilmacoin</a></p>
+<p> </p>
+<p>Opção 2º - Criando uma carteira online  [EM DESENVOLVIMENTO]</p>
+<p>- Vá até <a href="http://www.google.com/url?q=http%3A%2F%2Fdilmacoin.info%2F&sa=D&sntz=1&usg=AFQjCNFHbWmKpMxExCwp9sCLpuisfjyBNA">http://dilmacoin.info/</a> </p>
+<p>- Clique em &ldquo;Crie a sua conta&rdquo;</p>
+<p>- Coloque o seu email, e uma senha de pelo menos 10 letras</p>
+<p>- Importante lembrar que se você esquecer sua senha, suas dilmas serão perdidas, pois o site não armazena a sua senha (isso seria uma falha de segurança, uma vez que as pessoas que operam o site poderiam usar a sua senha para movimentar a sua carteira, isso torna o sistema melhor e mais seguro que de um banco convencional)</p>
+<p> </p>
+<h2><a name="h.94fyvdr2meu0"></a>Proteja a sua carteira</h2>
+<p>Quando você inicia o programa dilmacoin-qt.exe pela primeira vez, ele irá automaticamente criar um arquivo chamado wallet.dat, que irá conter a sua chave privada.</p>
+<p> </p>
+<a href="https://docs.google.com/document/d/1VfmYd6A0daqceYwh-KjrdA_azomDMiJx62EClcQ0-xs/pub#" name="b72353672cdf29c97b152c84ab5df78424aefce8"></a><a href="https://docs.google.com/document/d/1VfmYd6A0daqceYwh-KjrdA_azomDMiJx62EClcQ0-xs/pub#" name="2"></a>
+<table cellpadding="0" cellspacing="0">
+    <tbody>
+    <tr>
+        <td><p>[windows]  C:\Documents and Settings\[Username]\Application Data\Dilmacoin2\wallet.dat</p>
+            <p>[mac]  ~/Library/Application Support/Dilmacoin2/wallet.dat</p>
+            <p>[linix] ~/.dilmacoin2/wallet.dat</p></td>
+    </tr>
+    </tbody>
+</table>
+<p>Localização do arquivo wallet.dat</p>
+<p> </p>
+<p>Se algum hacker conseguir copiar este arquivo, ele irá poder então roubar as suas moedas.</p>
+<p> </p>
+<p>Você pode proteger este arquivo criptografando ele com uma senha, porém, mas cuidado, se você colocar uma senha fraca, com menos de 10 caracteres, um hacker conseguirá facilmente em questão de dias descobrir a sua senha, portanto, é recomendável que você escolha uma senha bem forte.</p>
+<p><img alt="" src="https://lh3.googleusercontent.com/CMExdDBhOemzYa30M_U4o8coEjxbDFBMyrBXdITbW4W42-7w0EdAG3g4QDZfTDqrQK6tHBGvOFstgQAh3VUNl5VS-ztoLws19wSQqlyJzGMzlkp19sZs1YI53W_6k4y8nA" title=""></p>
+<p> </p>
+<p>CUIDADO EXTRA: Se você usar uma senha para proteger sua carteira e por ventura se esquececer dela, todos as suas moedas serão perdidas para sempre.</p>
+<p><img alt="" src="https://lh6.googleusercontent.com/EQXuBvuzLeT2FPs9EMRi1s7Pa25Y67LjwtjAI3-rVMQHOq5CKD5RCcazlTX2_Jdd96ykmSR9yF2EYPde_MoIZVGu3PkIAQECFxnwc5XKvKUI8njggQV6GirQnjZUvWZiQQ" title=""></p>
+<p> </p>
+<p>CUIDADO EXTRA DOBRADO: Se você perder o arquivo wallet.dat, ou seu computador der uma pane de forma que você não consiga mais recuperar este arquivo, todas as suas moedas serão perdidas para sempre. Então é importante além de você proteger com senha, também realizar um backup da sua carteira.  E nunca, jamais, em hipotese alguma, armazene o backup de uma carteira desprotegida por senha, pois qualquer pessoa c/ acesso ao backup poderia gastar suas moedas.</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>O único incoveniente de proteger sua carteira com uma senha é o fato de que sempre que você tentar enviar qualquer quantia para qualquer pessoa, você terá de digitar a sua senha.</p>
+<p> </p>
+<p><img alt="" src="https://lh3.googleusercontent.com/P4CNYqlWUK8Uzj8PqNGlpqs_E8uP0-0Cp0MWfrV3-FON3veyiryH_8r4dpbx-n_0JFgfiVPs8u--DUSngXB_9aRjxgXoo_gulBDHXVcV94SelTUHRiswqT81WBzHzFNJNg" title=""></p>
+<h1><a name="h.vyxuwzrrmg27"></a>Como ganhar DilmaCoins ou outras criptomoedas?</h1>
+<p>Existem 4 maneiras de se ganhar:</p>
+<p>1º - Comprando de quem as deseja vender (maneira mais fácil).</p>
+<p>Existem pessoas vendendo dentro do grupo de  facebook <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.facebook.com%2Fgroups%2Fdilmacoin%2F&sa=D&sntz=1&usg=AFQjCNFBFPbMcfOc0iaxpN6SEdF-MPZsjg">https://www.facebook.com/groups/dilmacoin/</a></p>
+<p> </p>
+<p>2º - Recebendo através da venda de algum serviço, ou produto.</p>
+<p> </p>
+<p>3º - Programa &ldquo;Dilma Família&rdquo; de distribuição de DilmaCoins.</p>
+<p>- Inscrição disponível em <a href="http://www.google.com/url?q=http%3A%2F%2Fdilmacoin.info%2F&sa=D&sntz=1&usg=AFQjCNFHbWmKpMxExCwp9sCLpuisfjyBNA">http://dilmacoin.info/</a> </p>
+<p>- Todo semana, os reponsáveis do programa irá distribuir DilmaCoins para as pessoas inscritas no programa.</p>
+<p>- Para ser elegível, a pessoa precisa:</p>
+<ol start="1">
+    <li>Confirmar o endereço de email.</li>
+    <li>Não ter tempo para minerar a moeda.</li>
+</ol>
+<p> </p>
+<p>Os critérios de doação, sobre quem receberá mais moedas ou menos será estabelecido da seguinte forma:</p>
+<ol start="1">
+    <li>É empresário e financiou a campanha política do PT no passado  - Direito ao bolsa empresário</li>
+    <li>É de algum sindicato - Direito as moedas dos trabalhadores</li>
+    <li>É militante virtual do PT ( MAV ) - Ganha a bolsa militante virtual</li>
+    <li>Nenhuma acima - Irá ganhar o mínimo possível para não morrer de fome...</li>
+</ol>
+<p> </p>
+<p> </p>
+<p>3º - Minerando a DilmaCoin</p>
+<p>        Tópico mais avançado, que será abordado a seguir.</p>
+<p> </p>
+<h1><a name="h.ukdafeiyh126"></a>Como minerar a Dilmacoin?</h1>
+<p>Atualmente existem apenas 2 programas de computador que são utilizados para resolver os blocos da DilmaCoin (também conhecido como minerar DilmaCoin)</p>
+<p> </p>
+<p>Um para ser usado com a CPU (processador central) do seu computador, chamado cpuminer, que é mais lenta, porém muito mais fáci de se usar.</p>
+<p> </p>
+<p>O segundo é para ser usado com a GPU (placa de vídeo) do seu computador, chamado sgminer, que é muito mais rápida, porém, este programa requer que você possua uma placa de vídeo compátivel e moderna. Não existe uma lista das placas de vídeo que funcionam, você precisa baixar o programa e testar. Na verdade, se você não tiver uma placa de vídeo de gamer, potente, provavelmente este programa não irá funcionar.</p>
+<p> </p>
+<p>Em ambos os programas, você poderá rodar eles de forma individual em seu própio computador (mineração sozinha, ou solo mining), ou poderá se juntar com outras pessoas que também estão rodando este mesmo programa de computador para minerarem juntos e dividirem os lucros da mineração (mineração em conjunto).</p>
+<p> </p>
+<p>A mineração em conjunto é muito mais eficiente, principalmente porque quanto mais pessoas houverem minerando, mais dificil irá ficar. A realidade é que realizar a mineração individual só é possível nos primeiros dias do lançamento de uma criptomoeda e justamente por isso nós não iremos abordar a mineração individual neste manual.</p>
+<p> </p>
+<h2><a name="h.14g2i2y09om8"></a>Mineração em conjunto ou Mining pool  </h2>
+<p>No Brasil, existem 2 grandes websites que agrupam os mineradores de DilmaCoin  em conjunto para que todos eles minerem juntos.</p>
+<p> </p>
+<p>São estes:</p>
+<p><a href="http://www.google.com/url?q=http%3A%2F%2Fwww.facebook.com%2Fl.php%3Fu%3Dhttp%253A%252F%252Fdilmacoin.girino.org%252Fdilma2%252Fpublic%26h%3DWAQFYHaUn&sa=D&sntz=1&usg=AFQjCNFPfIROB6Sa3hr-ZGKCPrWOKdGWXg">http://dilmacoin.girino.org/dilma2/public</a> </p>
+<p><a href="http://www.google.com/url?q=http%3A%2F%2Fwww.p2poolbrasil.org%2F&sa=D&sntz=1&usg=AFQjCNGOMOSruTIGESPacLVnuk4Vxd5bOQ">http://www.p2poolbrasil.org/</a> </p>
+<p> </p>
+<p>Em troca de seus serviços, ambos os sites cobram uma taxa que incide sobre as moedas mineradas, geralmente cerca de 2%.  Em contrapartida, você estará sempre recebendo as moedas de forma mais constante e justa.</p>
+<p> </p>
+<p>Logo a seguir, você poderá baixar os programas de mineração, bem como configurar eles para minerar em conjunto.</p>
+<h2><a name="h.asd0p0mrjqmq"></a>1º programa: cpuminer</h2>
+<p>Este é o minerador para CPU, mais simples e que funciona em praticamente todos os computadores, desde o computador do milhão até os computadores mais modernos.</p>
+<p> </p>
+<p>Use os links a seguir para baixar o programa em seu computador.</p>
+<h3><a name="h.bs0uz0xawl5u"></a>Download para Windows</h3>
+<p><a href="http://www.google.com/url?q=http%3A%2F%2Fdarkcoin.io%2Fdownloads%2Fdarkcoin-minerd-1.2c.zip&sa=D&sntz=1&usg=AFQjCNH5SHUueNUwCm7iNffRt3HL5EkhSg">http://darkcoin.io/downloads/darkcoin-minerd-1.2c.zip</a></p>
+<p> </p>
+<h3><a name="h.4xumkqrv7mv"></a>Código fonte</h3>
+<p><a href="https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2Fig0tik3d%2Fdarkcoin-cpuminer-1.2c&sa=D&sntz=1&usg=AFQjCNFXlcMypPDTBmgqo8D5jWf6ASxW4Q">https://github.com/ig0tik3d/darkcoin-cpuminer-1.2c</a> </p>
+<p> </p>
+<h2><a name="h.o7r6h3scjr8n"></a>2º programa: sgminer</h2>
+<p>Este é o minerador para GPU,  que utiliza a sua placa de vídeo. Normalmente as placas de videos modernas são capazes de fazer milhares de cálculos matemáticos ao mesmo tempo, fazendo com que uma GPU consiga ter o mesmo poder de mineração que vários computadores usando somente as  CPUs. Porém, isso só é possível com placas de videos bem específicas. O programa a seguir poderá não funcionar com a sua placa de vídeo.</p>
+<p> </p>
+<p>Use os links a seguir para baixar o programa em seu computador.</p>
+<h3><a name="h.bzr4y9no11ue"></a>Download para Windows</h3>
+<p><a href="https://www.google.com/url?q=https%3A%2F%2Fmega.co.nz%2F%23!2JYXHDpD!OOiFOdsh5rnvk1zhz5niXENNzbgnw1UXwmFcicBzevI&sa=D&sntz=1&usg=AFQjCNEUFY7ZVZxsToAxRfgW7DtpqkLwWA">https://mega.co.nz/#!2JYXHDpD!OOiFOdsh5rnvk1zhz5niXENNzbgnw1UXwmFcicBzevI</a></p>
+<p> </p>
+<h3><a name="h.1wpp0eyktfo5"></a>Código fonte</h3>
+<p><a href="https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2Fprettyhatemachine%2Fsph-sgminer&sa=D&sntz=1&usg=AFQjCNHcaG-M792QHOnTucRuwG6LmE_RiQ">https://github.com/prettyhatemachine/sph-sgminer</a></p>
+<p> </p>
+<p> </p>
+<h2><a name="h.msl37z23kh8m"></a>Configurando o minerador para o &ldquo;pool do girino&rdquo;</h2>
+<ol start="1">
+    <li>Crie uma conta no <a href="http://www.google.com/url?q=http%3A%2F%2Fdilmacoin.girino.org%2Fdilma2%2Fpublic%2Findex.php&sa=D&sntz=1&usg=AFQjCNF66_y-Khp9-aReKlL4YQHygzyJHQ">http://dilmacoin.girino.org/dilma2/public/index.php</a></li>
+    <li>Se connecte com a sua conta</li>
+    <li>Crie um worker para você</li>
+</ol>
+<p>        <img alt="Screenshot 2014-04-15 21.21.01.png" src="https://lh5.googleusercontent.com/IKi3ylzf5Y82ozsnC1ERBalM_9l21Ac4I_jIR95dQIv-gSRQj9iRvp2htuwENwBVlfcbfGqQ7blpMVv7YjJQnRF5DBJOpbFi7seZVsbFW9ZyvO5BAwDmw4pjrbapFpUWuw" title=""></p>
+<p><img alt="Screenshot 2014-04-15 21.22.51.png" src="https://lh6.googleusercontent.com/lgNVENyRlUh7r3DHzrSqCwmCxiJWEwtrrQP1G9z00-76fpurvuc0-LJIZpbuBftgYIGszx6oDk7lsrPM7hsZF9PlrTlzzmIP8wWAiyXNOjx5dGMBcaJTjNM9Dmw_jRuTXA" title=""></p>
+<p> </p>
+<ol start="4">
+    <li>Depois de criar o seu worker, você irá ver ele na lista de workers</li>
+</ol>
+<p><img alt="" src="https://lh4.googleusercontent.com/yEdhSfiPJ3rvc1K-jbJI7q0Sleh3G4AXvHixGadQ5RlaMCAq4-zU4e2BQFBnsetNYqhWDY9op2SqrXl-hNGDQF0FEfYOvktC3Bl3FqWNn9a-1RI8mjoyNFPigUqjMBXN5Q" title=""></p>
+<p> </p>
+<ol start="5">
+    <li>Extraia o arquivo do minerador baixado no seu computador e salve ele em seu desktop</li>
+    <li>No seu desktop, crie um arquivo chamado girino.bat</li>
+    <li>Abra o arquivo girino.bat no seu bloco notas</li>
+</ol>
+<p> </p>
+<p>Se você está usando minerd ( mineração pela CPU ), o seu arquivo deverá ser este</p>
+<a href="https://docs.google.com/document/d/1VfmYd6A0daqceYwh-KjrdA_azomDMiJx62EClcQ0-xs/pub#" name="c09ca105e4c96c22b69be714186c0f8d165a9d51"></a><a href="https://docs.google.com/document/d/1VfmYd6A0daqceYwh-KjrdA_azomDMiJx62EClcQ0-xs/pub#" name="3"></a>
+<table cellpadding="0" cellspacing="0">
+    <tbody>
+    <tr>
+        <td><p>minerd.exe -o stratum+tcp://dilmacoin.girino.org:3032/ -u [usuario.worker] -p [senha] -a X11 -t 1</p></td>
+    </tr>
+    </tbody>
+</table>
+<p> </p>
+<p>Se você está usando sgminer ( mineração pela GPU ), o seu arquivo deverá ser este</p>
+<a href="https://docs.google.com/document/d/1VfmYd6A0daqceYwh-KjrdA_azomDMiJx62EClcQ0-xs/pub#" name="1434787016fb566ab14149ea71292cbb071e437d"></a><a href="https://docs.google.com/document/d/1VfmYd6A0daqceYwh-KjrdA_azomDMiJx62EClcQ0-xs/pub#" name="4"></a>
+<table cellpadding="0" cellspacing="0">
+    <tbody>
+    <tr>
+        <td><p>sgminer.exe -k darkcoin -o stratum+tcp://dilmacoin.girino.org:3032 -u [usuario.worker] -p [senha]  -I 13 -g 4 -w 512 --auto-gpu GPU_MAX_ALLOC_PERCENT=100</p></td>
+    </tr>
+    </tbody>
+</table>
+<p>lembre-se de susbstituir o [usuario.worker] e [senha] pelo o worker que você criou no passo 4</p>
+<p> </p>
+<p> </p>
+<ol start="8">
+    <li>Salve o arquivo e exeucte ele em seu computador.</li>
+</ol>
+<p> </p>
+<p> </p>
+<h2><a name="h.dt4fpt7s3uap"></a>Configurando o minerador para a p2poolbrasil  </h2>
+<ol start="1">
+    <li>Crie uma conta no <a href="http://www.google.com/url?q=http%3A%2F%2Fp2poolbrasil.org%2F&sa=D&sntz=1&usg=AFQjCNHVPaTMIKuTGG6zHqStG1pcvMYQew">http://p2poolbrasil.org/</a></li>
+    <li>Extraia o arquivo baixado no seu desktop</li>
+    <li>No seu desktop, crie um arquivo chamado p2pool.bat</li>
+    <li>Abra o arquivo p2pool.bat no seu bloco notas</li>
+    <li>[Para completar]</li>
+</ol>
+<p> </p>
+<p> </p>
+<h1><a name="h.y8a18pqjnl8f"></a>Diferenças entre o Bitcoin e a DilmaCoin</h1>
+<p> </p>
+<a href="https://docs.google.com/document/d/1VfmYd6A0daqceYwh-KjrdA_azomDMiJx62EClcQ0-xs/pub#" name="d5c9059e8b74f3ecee49f8f5eefe7b8c189c330b"></a><a href="https://docs.google.com/document/d/1VfmYd6A0daqceYwh-KjrdA_azomDMiJx62EClcQ0-xs/pub#" name="5"></a>
+<table cellpadding="0" cellspacing="0">
+    <tbody>
+    <tr>
+        <td><p>Nome (denominação)</p></td>
+        <td><p>DilmaCoin (HUE)</p></td>
+        <td><p>Bitcoin (BTC)</p></td>
+    </tr>
+    <tr>
+        <td><p>Quantidade total</p></td>
+        <td><p>~ 50 milhões</p></td>
+        <td><p>21 milhões</p></td>
+    </tr>
+    <tr>
+        <td><p>Algorítimo de criptografia usado</p></td>
+        <td><p>X11</p>
+            <p>coletânea de 11 algorítimos de criptografia</p></td>
+        <td><p>SHA-256</p></td>
+    </tr>
+    <tr>
+        <td><p>Tempo de confirmação de cada bloco</p></td>
+        <td><p>1 minuto</p></td>
+        <td><p>10 minutos</p></td>
+    </tr>
+    <tr>
+        <td><p>Mineração</p></td>
+        <td><p>Só é possível com computador próprio.</p></td>
+        <td><p>Impossível minerar usando computador próprio.</p>
+            <p> </p>
+            <p>Necessário investimento de pelo menos 10 mil reais para comprar um equipamento especifico que só minera Bitcoins, e que tem uma vida útil de menos de 4 meses, e consome muita eletricidade.</p></td>
+    </tr>
+    <tr>
+        <td><p>Custo</p></td>
+        <td><p>Não é negociada em nenhuma bolsa.</p></td>
+        <td><p>Cerca de R$ 1500 reais por Bitcoin.</p></td>
+    </tr>
+    <tr>
+        <td><p>Data de criação</p></td>
+        <td><p>23/03/2014</p></td>
+        <td><p>29/01/2009</p></td>
+    </tr>
+    <tr>
+        <td><p>Criador</p></td>
+        <td><p>DilmaCoin (codinome para o autor que quer manter o anonimato)</p></td>
+        <td><p>Satoshi Nakamoto (codinome para o autor que quer manter o anonimato)</p></td>
+    </tr>
+    </tbody>
+</table>
+<p> </p>
+<p> </p>
+<h1><a name="h.xsu4bls5i7in"></a>Informações técnicas sobre a DilmaCoin</h1>
+<p> </p>
+<a href="https://docs.google.com/document/d/1VfmYd6A0daqceYwh-KjrdA_azomDMiJx62EClcQ0-xs/pub#" name="5a088daf86c8bf72ece4a8f880659f3e5715c8a6"></a><a href="https://docs.google.com/document/d/1VfmYd6A0daqceYwh-KjrdA_azomDMiJx62EClcQ0-xs/pub#" name="6"></a>
+<table cellpadding="0" cellspacing="0">
+    <tbody>
+    <tr>
+        <td><p>Simbolo</p></td>
+        <td><p>HUE</p></td>
+    </tr>
+    <tr>
+        <td><p>Denominações:</p></td>
+        <td><p>1 HUE = 1000mHUEs</p>
+            <p>1 mHUE = 1000 µHUEs</p>
+            <p>1 µHUE = 100 Dilmas    </p>
+            <p> </p>
+            <p>É isso mesmo  que você leu, 1 HUE valem 100.000.000 Dilmas  </p>
+            <p> </p></td>
+    </tr>
+    <tr>
+        <td><p>Tempo estimado para minerar cada bloco.</p></td>
+        <td><p>60 segundos</p></td>
+    </tr>
+    <tr>
+        <td><p>Recompensa por bloco minerado</p></td>
+        <td><p>48 HUES</p>
+            <p>A cada 525,600 blocos minerados ( aproximadamente 1 ano ), a recompensa por bloco minerado irá ser cortada pela metade.</p></td>
+    </tr>
+    <tr>
+        <td><p>Número total de moedas a serem mineradas</p></td>
+        <td><p>50.457.600 HUEs<br>
+            Nos próximos 4 anos, deverão ser minerados aproximadamente 48 milhões de HUEs.</p></td>
+    </tr>
+    <tr>
+        <td><p>Número de blocos para a maturidade das novas moeda mineradas</p></td>
+        <td><p>120 blocos (aproximadamente 2 horas)</p></td>
+    </tr>
+    <tr>
+        <td><p>Algoritimo</p></td>
+        <td><p>X11</p></td>
+    </tr>
+    <tr>
+        <td><p>Porta P2P</p></td>
+        <td><p>11057</p></td>
+    </tr>
+    <tr>
+        <td><p>Porta RPC</p></td>
+        <td><p>21057</p></td>
+    </tr>
+    <tr>
+        <td><p>Reajuste da dificuldade</p></td>
+        <td><p>A cada bloco, utilizando o algoritimo Kimoto Gravity Well</p></td>
+    </tr>
+    <tr>
+        <td><p>Código fonte</p></td>
+        <td><p><a href="http://www.google.com/url?q=http%3A%2F%2Fgithub.com%2FDilmacoin%2Fdilmacoin&sa=D&sntz=1&usg=AFQjCNEDalrL8TFgLL3jrflhKEuRRguBrA">http://github.com/Dilmacoin/dilmacoin</a></p></td>
+    </tr>
+    </tbody>
+</table>
 <a class="close-reveal-modal">&#215;</a>
 </body>
 </html>

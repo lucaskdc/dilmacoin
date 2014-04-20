@@ -41,19 +41,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="infos.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="infos.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/infos.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="7" selection-start="1394" selection-end="1394" vertical-scroll-proportion="-17.538462" vertical-offset="258" max-vertical-offset="816">
+            <state line="113" column="9" selection-start="8142" selection-end="8142" vertical-scroll-proportion="0.5321101" vertical-offset="1631" max-vertical-offset="7786">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="download.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="download.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/download.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="52" selection-start="128" selection-end="128" vertical-scroll-proportion="0.1827957" vertical-offset="0" max-vertical-offset="558">
+            <state line="9" column="40" selection-start="265" selection-end="265" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="289">
               <folding />
             </state>
           </provider>
@@ -80,9 +80,9 @@
       <list>
         <option value="$PROJECT_DIR$/CNAME" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/infos.html" />
         <option value="$PROJECT_DIR$/css/foundation.min.css" />
         <option value="$PROJECT_DIR$/download.html" />
+        <option value="$PROJECT_DIR$/infos.html" />
       </list>
     </option>
   </component>
@@ -328,16 +328,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/infos.html">
+    <entry file="file://$PROJECT_DIR$/download.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="7" selection-start="1394" selection-end="1394" vertical-scroll-proportion="-17.538462" vertical-offset="258" max-vertical-offset="816">
+        <state line="9" column="40" selection-start="265" selection-end="265" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="289">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/download.html">
+    <entry file="file://$PROJECT_DIR$/infos.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="52" selection-start="128" selection-end="128" vertical-scroll-proportion="0.1827957" vertical-offset="0" max-vertical-offset="558">
+        <state line="113" column="9" selection-start="8142" selection-end="8142" vertical-scroll-proportion="0.5321101" vertical-offset="1631" max-vertical-offset="7786">
           <folding />
         </state>
       </provider>
