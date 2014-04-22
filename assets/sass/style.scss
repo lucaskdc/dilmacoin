@@ -1,0 +1,182 @@
+@import 'normalize';
+
+body {
+    background-color:#fff;
+    background:url(../img/congruent_outline.png) repeat;
+    color:#444;
+    font-size:14px;
+    font-family:Arial, sans-serif;
+    line-height:1.5;
+
+    a {
+        color:#fff;
+
+        &:hover {
+            color:rgba(#fff, .8);
+        }
+    }
+}
+
+hr {
+    color:#fff;
+    border:none;
+    border-bottom-width:1px;
+    border-bottom-style:solid;
+    margin-bottom:24px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family:'Oswald', sans-serif;
+    margin-top:0;
+    margin-bottom:24px;
+}
+
+ul {
+    margin-bottom:24px;
+}
+
+p {
+    margin-bottom:24px;
+}
+
+table {
+    margin-bottom:24px;
+    width:100%;
+
+    th {
+        background-color:#FFF;
+        color:#C0392B;
+    }
+
+    th,
+    td {
+        border:1px solid #fff;
+        padding:12px;
+    }
+}
+
+@mixin cf() {
+    &:after{
+        content:"";
+        display:table;
+        clear:both;
+    }
+}
+
+.cf {
+    @include cf();
+}
+
+.wrapper {
+    margin:0 auto;
+    width:960px;
+}
+
+#head {
+    min-height:84px;
+}
+
+.head {
+    padding:24px 0;
+}
+
+.head__nav {
+    float:right;
+    line-height:2.6;
+    list-style:none;
+    margin:0;
+    padding:0;
+
+    > li {
+        float:left;
+        padding:0 12px;
+
+        &:first-child {
+            padding-left:0;
+        }
+
+        &:last-child {
+            padding-right:0;
+        }
+    }
+}
+
+.logo {
+    display:block;
+    float:left;
+    font-size:34px;
+    font-family:'Oswald', sans-serif;
+    line-height:1;
+    text-align:center;
+    text-decoration:none;
+
+    > img,
+    > div {
+        display:inline-block;
+        vertical-align:baseline;
+    }
+}
+
+.main {
+    background-color:#C0392B;
+    color:#fff;
+    padding:48px 0;
+
+    a {
+        color:#fff;
+
+        &:hover {
+            color:rgba(#fff, .8);
+        }
+    }
+}
+
+.meme {
+    text-align:center;
+}
+
+.meme__title {
+    font-size:48px;
+    margin-bottom:0;
+}
+
+.meme__subtitle {
+    font-size:24px;
+    font-weight:normal;
+}
+
+.foot {
+    padding:24px 0;
+}
+
+.foot__nav {
+    list-style:none;
+    margin:0;
+    padding:0;
+
+    > li {
+        float:left;
+        padding:0 6px;
+
+        &:first-child {
+            padding-left:0;
+        }
+
+        &:last-child {
+            padding-right:0;
+        }
+    }
+}
+
+.foot__nav--left {
+    float:left;
+}
+
+.foot__nav--right {
+    float:right;
+}

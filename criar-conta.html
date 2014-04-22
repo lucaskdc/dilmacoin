@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Dilmacoin - O Bitcoin dos pobres, o Bitcoin da Presidanta</title>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <script type="text/javascript" src="bower_components/modernizr/modernizr.js"></script>
+</head>
+<body>
+
+    <!-- #head -->
+    <div id="head"></div>
+    <!-- /#head -->
+
+    <!-- .main -->
+    <div class="main">
+        <!-- .wrapper -->
+        <article class="wrapper">
+            <h1 class="">COMO CRIAR A SUA CARTEIRA?</h1>
+            <hr />
+            <p>
+                Existem 2 maneiras de se criar a sua carteira:
+            </p>
+            <h2>Opção 1 - Instalando o programa Dilmacoin em seu computador (Opção para usuários avançados)</h2>
+            <ul>
+                <li>
+                    <a href="https://mega.co.nz/#!NQ9ykYwR!aZe48qu0Pphc1TK3SjxHZT3vyP6tqCVUUDHwMOxU4mo">[Windows]</a>
+                </li>
+                <li>
+                    <a href="https://mega.co.nz/#!tJUAyRIA!UIKvtWlgf1xWhQ6OrnqYe-PqhoB760Vh1_ipKFT6CpM">[Mac]</a>
+                </li>
+            </ul>
+
+            <p>
+                Ao iniciar, a carteira irá tentar entrar em sincronia com a rede, algo que deve dermorar +/- 1 minuto.   Se isso não acontecer, será necessário que você realize um ajuste no arquivo de configuração da carteira.
+            </p>
+
+            <p>
+                No windows, este é o arquivo:  C:\Documents and Settings\[Username]\Application Data\Dilmacoin2\dilmacoin.conf
+                <br />
+                Abra ele e coloque as seguintes informações:
+            </p>
+
+            <pre>
+                <code>
+addnode=24.90.156.217
+addnode= 166.78.120.112
+addnode=54.84.229.24
+                </code>
+            </pre>
+
+            <p>
+                Fazer direto do código fonte(Linux ou Mac): <a href="http://github.com/Dilmacoin/dilmacoin">http://github.com/Dilmacoin/dilmacoin</a>
+            </p>
+
+            <h2>Opção 2 - Criando uma carteira online  [EM DESENVOLVIMENTO]</h2>
+            <ul>
+                <li>
+                    Vá até <a href="http://dilmacoin.info/">http://dilmacoin.info/</a>
+                </li>
+                <li>
+                    Clique em “Crie a sua conta”
+                </li>
+                <li>
+                    Coloque o seu email, e uma senha de pelo menos 10 letras
+                </li>
+                <li>
+                    Importante lembrar que se você esquecer sua senha, suas dilmas serão perdidas, pois o site não armazena a sua senha (isso seria uma falha de segurança, uma vez que as pessoas que operam o site poderiam usar a sua senha para movimentar a sua carteira, isso torna o sistema melhor e mais seguro que de um banco convencional)
+                </li>
+            </ul>
+
+            <h2>Proteja a sua carteira</h2>
+            <p>
+                Quando você inicia o programa dilmacoin-qt.exe pela primeira vez, ele irá automaticamente criar um arquivo chamado wallet.dat, que irá conter a sua chave privada.
+            </p>
+
+            <p>
+                Localização do arquivo wallet.dat:
+            </p>
+            <pre>
+                <code>
+[windows]  C:\Documents and Settings\[Username]\Application Data\Dilmacoin2\wallet.dat
+[mac]  ~/Library/Application Support/Dilmacoin2/wallet.dat
+[linix] ~/.dilmacoin2/wallet.dat
+                </code>
+            </pre>
+
+            <p>
+                Se algum hacker conseguir copiar este arquivo, ele irá poder então roubar as suas moedas.
+            </p>
+
+            <p>
+                Você pode proteger este arquivo criptografando ele com uma senha, porém, mas cuidado, se você colocar uma senha fraca, com menos de 10 caracteres, um hacker conseguirá facilmente em questão de dias descobrir a sua senha, portanto, é recomendável que você escolha uma senha bem forte.
+            </p>
+
+            <img src="assets/img/carteira-1.png" alt="" />
+
+            <p>
+                <strong>CUIDADO EXTRA</strong>: Se você usar uma senha para proteger sua carteira e por ventura se esquececer dela, todos as suas moedas serão perdidas para sempre.
+            </p>
+
+            <img src="assets/img/carteira-2.png" alt="" />
+
+            <p>
+                <strong>CUIDADO EXTRA DOBRADO</strong>: Se você perder o arquivo wallet.dat, ou seu computador der uma pane de forma que você não consiga mais recuperar este arquivo, todas as suas moedas serão perdidas para sempre. Então é importante além de você proteger com senha, também realizar um backup da sua carteira.  E nunca, jamais, em hipotese alguma, armazene o backup de uma carteira desprotegida por senha, pois qualquer pessoa c/ acesso ao backup poderia gastar suas moedas.
+            </p>
+
+            <p>
+                O único incoveniente de proteger sua carteira com uma senha é o fato de que sempre que você tentar enviar qualquer quantia para qualquer pessoa, você terá de digitar a sua senha.
+            </p>
+
+            <img src="assets/img/carteira-3.png" alt="" />
+
+        </article>
+        <!-- /.wrapper -->
+    </div>
+    <!-- /.main -->
+
+    <!-- #foot -->
+    <div id="foot"></div>
+    <!-- /#foot -->
+
+    <script type="text/javascript" src="bower_components/jquery/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>

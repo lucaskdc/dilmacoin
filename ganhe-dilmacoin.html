@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Dilmacoin - O Bitcoin dos pobres, o Bitcoin da Presidanta</title>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <script type="text/javascript" src="bower_components/modernizr/modernizr.js"></script>
+</head>
+<body>
+
+    <!-- #head -->
+    <div id="head"></div>
+    <!-- /#head -->
+
+    <!-- .main -->
+    <div class="main">
+        <!-- .wrapper -->
+        <article class="wrapper">
+            <h1 class="">GANHE DILMACOIN</h1>
+            <hr />
+            <br />
+
+            <h1>COMO MINERAR A DILMACOIN?</h1>
+            <hr />
+            <p>Atualmente existem apenas 2 programas de computador que são utilizados para resolver os blocos da DilmaCoin (também conhecido como minerar DilmaCoin).</p>
+            <p>Um para ser usado com a CPU (processador central) do seu computador, chamado cpuminer, que é mais lenta, porém muito mais fáci de se usar.</p>
+            <p>O segundo é para ser usado com a GPU (placa de vídeo) do seu computador, chamado sgminer, que é muito mais rápida, porém, este programa requer que você possua uma placa de vídeo compátivel e moderna. Não existe uma lista das placas de vídeo que funcionam, você precisa baixar o programa e testar. Na verdade, se você não tiver uma placa de vídeo de gamer, potente, provavelmente este programa não irá funcionar.</p>
+            <p>Em ambos os programas, você poderá rodar eles de forma individual em seu própio computador (mineração sozinha, ou solo mining), ou poderá se juntar com outras pessoas que também estão rodando este mesmo programa de computador para minerarem juntos e dividirem os lucros da mineração (mineração em conjunto).</p>
+            <p>A mineração em conjunto é muito mais eficiente, principalmente porque quanto mais pessoas houverem minerando, mais dificil irá ficar. <strong>A realidade é que realizar a mineração individual só é possível nos primeiros dias do lançamento de uma criptomoeda</strong> e justamente por isso nós não iremos abordar a mineração individual neste manual.</p>
+
+            <h2>Mineração em conjunto ou Mining pool</h2>
+            <p>No Brasil, existem 2 grandes websites que agrupam os mineradores de DilmaCoin  em conjunto para que todos eles minerem juntos.</p>
+            <ul>
+            	<li>São estes:</li>
+                <li>
+                    <a href="http://dilmacoin.girino.org/dilma2/public ">Girino</a>
+                </li>
+                <li>
+                    <a href="http://www.p2poolbrasil.org/ ">p2poolbrasil</a>
+                </li>
+            </ul>
+
+            <p>Em troca de seus serviços, ambos os sites cobram uma taxa que incide sobre as moedas mineradas, geralmente cerca de 2%. Em contrapartida, você estará sempre recebendo as moedas de forma mais constante e justa.</p>
+            <p>Logo a seguir, você poderá baixar os programas de mineração, bem como configurar eles para minerar em conjunto.</p>
+
+            <h3>Programa 1: cpuminer</h3>
+            <p>Este é o minerador para CPU, mais simples e que funciona em praticamente todos os computadores, desde o computador do milhão até os computadores mais modernos.</p>
+            <p>Use os links a seguir para baixar o programa em seu computador.</p>
+            <h4 style="font-weight:normal;">Download para Windows:</h4>
+            <ul>
+                <li>
+                    <a href="http://darkcoin.io/downloads/darkcoin-minerd-1.2c.zip">http://darkcoin.io/downloads/darkcoin-minerd-1.2c.zip</a>
+                </li>
+            </ul>
+
+            <h4 style="font-weight:normal;">Código fonte:</h4>
+            <ul>
+                <li>
+                    <a href="https://github.com/ig0tik3d/darkcoin-cpuminer-1.2c">https://github.com/ig0tik3d/darkcoin-cpuminer-1.2c</a>
+                </li>
+            </ul>
+
+            <h3>2º programa: sgminer</h3>
+            <p>Este é o minerador para GPU,  que utiliza a sua placa de vídeo. Normalmente as placas de videos modernas são capazes de fazer milhares de cálculos matemáticos ao mesmo tempo, fazendo com que uma GPU consiga ter o mesmo poder de mineração que vários computadores usando somente as  CPUs. Porém, isso só é possível com placas de videos bem específicas. O programa a seguir poderá não funcionar com a sua placa de vídeo.</p>
+            <p>Use os links a seguir para baixar o programa em seu computador.</p>
+
+            <h4 style="font-weight:normal;">Download para Windows:</h4>
+            <ul>
+                <li>
+                    <a href="https://mega.co.nz/#!2JYXHDpD!OOiFOdsh5rnvk1zhz5niXENNzbgnw1UXwmFcicBzevI">https://mega.co.nz/#!2JYXHDpD!OOiFOdsh5rnvk1zhz5niXENNzbgnw1UXwmFcicBzevI</a>
+                </li>
+            </ul>
+
+            <h4 style="font-weight:normal;">Código fonte:</h4>
+            <ul>
+                <li>
+                    <a href="https://github.com/prettyhatemachine/sph-sgminer">https://github.com/prettyhatemachine/sph-sgminer</a>
+                </li>
+            </ul>
+
+            <h2>Configurando o minerador para o “pool do girino”</h2>
+            <p>1. Crie uma conta no http://dilmacoin.girino.org/dilma2/public/index.php</p>
+            <p>2. Se connecte com a sua conta</p>
+            <p>3. Crie um worker para você</p>
+            <img src="assets/img/girino-1.png" alt="" />
+            <img src="assets/img/girino-2.png" alt="" />
+            <p>4. Depois de criar o seu worker, você irá ver ele na lista de workers</p>
+            <img src="assets/img/girino-3.png" alt="" />
+            <p>5. Extraia o arquivo do minerador baixado no seu computador e salve ele em seu desktop</p>
+            <p>6. No seu desktop, crie um arquivo chamado girino.bat</p>
+            <p>7. Abra o arquivo girino.bat no seu bloco notas</p>
+
+            <p>Se você está usando minerd ( mineração pela CPU ), o seu arquivo deverá ser este:</p>
+            <pre>
+                <code>
+minerd.exe -o stratum+tcp://dilmacoin.girino.org:3032/ -u [usuario.worker] -p [senha] -a X11 -t 1
+                </code>
+            </pre>
+
+            <p>Se você está usando sgminer ( mineração pela GPU ), o seu arquivo deverá ser este:</p>
+            <pre>
+                <code>
+sgminer.exe -k darkcoin -o stratum+tcp://dilmacoin.girino.org:3032 -u [usuario.worker] -p [senha]  -I 13 -g 4 -w 512 --auto-gpu GPU_MAX_ALLOC_PERCENT=100
+                </code>
+            </pre>
+            <p>
+                <small>lembre-se de susbstituir o [usuario.worker] e [senha] pelo o worker que você criou no passo 4</small>
+            </p>
+            <p>8. Salve o arquivo e exeucte ele em seu computador.</p>
+
+            <h3>Configurando o minerador para a p2poolbrasil  </h3>
+            <ol>
+            	<li>Crie uma conta no <a href="http://p2poolbrasil.org/">http://p2poolbrasil.org/</a></li>
+            	<li>Extraia o arquivo baixado no seu desktop</li>
+            	<li>No seu desktop, crie um arquivo chamado p2pool.bat</li>
+            	<li>Abra o arquivo p2pool.bat no seu bloco notas</li>
+            	<li>[Para completar]</li>
+            </ol>
+        </article>
+        <!-- /.wrapper -->
+    </div>
+    <!-- /.main -->
+
+    <!-- #foot -->
+    <div id="foot"></div>
+    <!-- /#foot -->
+
+    <script type="text/javascript" src="bower_components/jquery/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>
