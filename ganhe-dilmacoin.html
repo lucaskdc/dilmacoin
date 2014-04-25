@@ -91,7 +91,7 @@
             <p>6. No seu desktop, crie um arquivo chamado girino.bat</p>
             <p>7. Abra o arquivo girino.bat no seu bloco notas</p>
 
-            <p>Se você está usando minerd ( mineração pela CPU ), o seu arquivo deverá ser este:</p>
+            <p>Se você está usando minerd ( mineração pela CPU ), o seu arquivo deverá ser este, lembrando que você pode aumentar o número de cores usados pelo argumento "-t":</p>
             <pre>
                 <code>
 minerd.exe -o stratum+tcp://dilmacoin.girino.org:3032/ -u [usuario.worker] -p [senha] -a X11 -t 1
@@ -101,7 +101,8 @@ minerd.exe -o stratum+tcp://dilmacoin.girino.org:3032/ -u [usuario.worker] -p [s
             <p>Se você está usando sgminer ( mineração pela GPU ), o seu arquivo deverá ser este:</p>
             <pre>
                 <code>
-sgminer.exe -k darkcoin -o stratum+tcp://dilmacoin.girino.org:3032 -u [usuario.worker] -p [senha]  -I 13 -g 4 -w 512 --auto-gpu GPU_MAX_ALLOC_PERCENT=100
+GPU_MAX_ALLOC_PERCENT=100
+sgminer.exe -k darkcoin -o stratum+tcp://dilmacoin.girino.org:3032 -u [usuario.worker] -p [senha]  -I 13 -g 4 -w 512 --auto-gpu
                 </code>
             </pre>
             <p>
